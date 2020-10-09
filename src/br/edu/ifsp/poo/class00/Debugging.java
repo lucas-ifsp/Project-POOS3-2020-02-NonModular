@@ -1,4 +1,4 @@
-package br.edu.ifsp.poo;
+package br.edu.ifsp.poo.class00;
 
 import java.util.ArrayList;
 import java.util.List;
