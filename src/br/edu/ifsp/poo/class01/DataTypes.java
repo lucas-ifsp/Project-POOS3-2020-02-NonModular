@@ -77,12 +77,6 @@ public class DataTypes {
         System.out.println(
                 switch (LocalDate.now().getDayOfWeek()){
                     case MONDAY, FRIDAY, SUNDAY -> {
-                        System.out.println("Uhhaaaa");
-                        System.out.println("Uhhaaaa");
-                        System.out.println("Uhhaaaa");
-                        System.out.println("Uhhaaaa");
-                        System.out.println("Uhhaaaa");
-
                         yield 6; // usado quando há um bloco que faz algo além de retornar o valor
                     }
                     case TUESDAY -> 7;
