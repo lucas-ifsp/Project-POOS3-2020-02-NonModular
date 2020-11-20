@@ -1,5 +1,7 @@
 package br.edu.ifsp.poo.class05;
 
+import java.util.Objects;
+
 public class Circulo extends Figura{
     private Double raio;
 
@@ -11,5 +13,16 @@ public class Circulo extends Figura{
     @Override
     public Double getArea() {
         return Math.PI * Math.pow(raio, 2);
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return 10;
     }
 }

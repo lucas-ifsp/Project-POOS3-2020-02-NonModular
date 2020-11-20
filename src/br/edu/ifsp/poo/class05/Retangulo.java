@@ -1,5 +1,7 @@
 package br.edu.ifsp.poo.class05;
 
+import java.util.Objects;
+
 public class Retangulo extends Figura{
 
     private Double largura;
@@ -14,5 +16,15 @@ public class Retangulo extends Figura{
     @Override
     public Double getArea() {
         return largura * comprimento;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return 10;
     }
 }

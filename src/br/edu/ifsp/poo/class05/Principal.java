@@ -1,5 +1,10 @@
 package br.edu.ifsp.poo.class05;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class Principal {
 
     public static void main(String[] args) {
@@ -10,5 +15,10 @@ public class Principal {
         System.out.println(t1);
         System.out.println("Circulo: " + c1.getArea());
         System.out.println("Retangulo: " + r1.getArea());
+    }
+
+    public String loadHTML(String fileName) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        return reader.readLine();
     }
 }
